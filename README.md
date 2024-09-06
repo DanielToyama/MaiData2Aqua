@@ -1,0 +1,2 @@
+# MaiData2Aqua
+用于将麦当劳机器人导出的gamedata转化为AquaNet可读的格式
