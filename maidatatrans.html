@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Transformer</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          padding: 20px;
+          background-color: #f4f4f4;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      h1 {
+          text-align: center;
+      }
+      input[type="file"] {
+          margin: 20px 0;
+          display: block;
+          width: 100%;
+          max-width: 300px; /* Set a max-width for better appearance */
+      }
+      button {
+          padding: 10px 20px;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          cursor: pointer;
+      }
+      button:hover {
+          background-color: #0056b3;
+      }
+  </style>
+</head>
+<body>
+
+<h1>mai国服转Aqua服务器工具</h1>
+请将你用Telegram“麦当劳机器人”转换得到的数据在这里上传
+<input type="file" id="fileInput" accept=".json">
+<button id="transformButton">转换并下载</button>
+
+<script>
+    document.getElementById('transformButton').onclick = () => {
+        const fileInput = document.getElementById('fileInput');
+        if (fileInput.files.length === 0) {
+            alert('请先选择一个文件');
+            return;
+        }
+
+        const reader = new FileReader();
+        reader.onload =async (event) => {
+            try {
+                const originalData = JSON.parse(event.target.result);
+                
+                // Transform data
+                const transformedData = {
+                    userMusicDetailList: originalData.flatMap(entry =>
+                        entry.userMusicDetailList.map(musicDetail => ({
+                            musicId: musicDetail.musicId,
+                            level: musicDetail.level,
+                            playCount: musicDetail.playCount,
+                            achievement: musicDetail.achievement,
+                            comboStatus: musicDetail.comboStatus,
+                            syncStatus: musicDetail.syncStatus,
+                            deluxscoreMax: musicDetail.deluxscoreMax,
+                            scoreRank: musicDetail.scoreRank,
+                            extNum1: musicDetail.extNum1
+                            // extNum2 is omitted
+                        }))
+                    )
+                };
+
+                // Replace with your empty data structure
+                const response = await fetch('http://raw.githubusercontent.com/DanielToyama/MaiData2Aqua/refs/heads/main/emptydata.json');
+                const emptyData = await response.json();
+                emptyData.userMusicDetailList = transformedData.userMusicDetailList;
+
+                // Create a Blob for downloading
+                const blob = new Blob([JSON.stringify(emptyData, null, 4)], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'finalData.json';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+
+            } catch (error) {
+                alert('读取文件异常:' + error.message+"\n请检查你的文件是否正确");
+            }
+        };
+        reader.readAsText(fileInput.files[0]);
+    };
+</script>
+<p style="text-align: center;">
+  <a href="https://github.com/DanielToyama/MaiData2Aqua" target="_blank" style="text-decoration: none; color: #007bff;">GitHub:DanielToyama/MaiData2Aqua/</a>
+</p>
+</body>
+</html>
