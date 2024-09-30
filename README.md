@@ -6,7 +6,7 @@
 
 2.在某麦当劳机器人使用/getplaydata json下载gamedata.json
 
-3.打开maidatatrans.html,导入gamedata.json并且转换
+3.打开[maidatatrans.html](https://danieltoyama.fun/MaiData2Aqua/maidatatrans.html),导入gamedata.json并且转换
 
 4.将导出的finalData导入到任意Aqua服务器
 
