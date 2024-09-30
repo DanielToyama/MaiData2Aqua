@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JSON Transformer</title>
+    <title>MaiData2Aqua</title>
     <style>
       body {
           font-family: Arial, sans-serif;
@@ -73,7 +73,7 @@
                 };
 
                 // Replace with your empty data structure
-                const response = await fetch('http://raw.githubusercontent.com/DanielToyama/MaiData2Aqua/refs/heads/main/emptydata.json');
+                const response = await fetch('https://raw.githubusercontent.com/DanielToyama/MaiData2Aqua/refs/heads/main/emptydata.json');
                 const emptyData = await response.json();
                 emptyData.userMusicDetailList = transformedData.userMusicDetailList;
 
