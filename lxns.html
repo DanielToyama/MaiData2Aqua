@@ -194,9 +194,14 @@
                 const csvData = event.target.result;
                
                 // 将转换后的 JSON 结果生成文件并提供下载链接
-                const jsonBlob = new Blob([JSON.stringify( convertCsvToJson(csvData), null, 2)], { type: 'application/json' });
+                const jsonBlob = new Blob([JSON.stringify( convertCsvToJson(csvData).finalResult, null, 2)], { type: 'application/json' });
                 const jsonUrl = URL.createObjectURL(jsonBlob);
-
+                
+                if(!convertCsvToJson(csvData).success)
+                {
+                    outputDiv.textContent = "转换失败！";
+                    return
+                }
                 downloadBtn.href = jsonUrl;
                 downloadBtn.style.display = 'inline-block';
                 outputDiv.textContent = "转换完成！";
@@ -218,7 +223,7 @@
                     const csvData = event.target.result;
 
                     // 使用 convertCsvToJson 进行 CSV 转换
-                    const transformedData = convertCsvToJson(csvData);
+                    const transformedData = convertCsvToJson(csvData).finalResult;
 
                     // 用转换后的数据替换 emptyData 数据
                     const response = await fetch('https://raw.githubusercontent.com/DanielToyama/MaiData2Aqua/refs/heads/main/emptydata.json');
@@ -228,7 +233,11 @@
                     // 将转换后的 JSON 结果生成文件并提供下载链接
                 const jsonBlob = new Blob([JSON.stringify(emptyData, null, 4)], { type: 'application/json' });
                 const jsonUrl = URL.createObjectURL(jsonBlob);
-
+                if(!convertCsvToJson(csvData).success)
+                {
+                    outputDiv.textContent = "转换失败！";
+                    return
+                }
                 downloadBtn.href = jsonUrl;
                 downloadBtn.style.display = 'inline-block';
                 outputDiv.textContent = "转换完成！";
@@ -329,8 +338,8 @@
                 finalResult.push(results[id]);
             }
 
-
-            return finalResult
+            
+            return { success: true, finalResult };
 
         }
 
