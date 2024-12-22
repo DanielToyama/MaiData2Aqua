@@ -13,7 +13,7 @@
         body {
             font-family: Arial, sans-serif;
             padding: 20px;
-            background-color: #f4f4f4;
+            background-color: #ffffff;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -53,6 +53,24 @@
     <button id="transformButton">转换并下载</button>
 
     <script>
+        function getUrlParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Check if a specific parameter exists and modify style accordingly
+        window.onload = function () {
+            const styleParam = getUrlParam('style'); // Retrieve 'style' parameter
+            if (styleParam) {
+                if (styleParam === 'dark') {
+                    document.body.style.backgroundColor = '#333';
+                    document.body.style.color = '#fff';
+                } else if (styleParam === 'light') {
+                    document.body.style.backgroundColor = '#fff';
+                    document.body.style.color = '#000';
+                }
+            }
+        }
         document.getElementById('transformButton').onclick = () => {
             const fileInput = document.getElementById('fileInput');
             if (fileInput.files.length === 0) {
@@ -106,14 +124,24 @@
             reader.readAsText(fileInput.files[0]);
         };
     </script>
+    <p>
+        注：此工具专门用于生成完整maimai存档，
+    <p>
+        如果你使用的maimai服务端（如AquaDXNet）支持直读取麦当劳bot导出的json文件，
+    <p>
+        那么你可以不用使用这个工具，直接导入json文件即可
+    <p>
+        如果你因为某些原因无法使用麦当劳机器人，那么你可以使用下面的落雪maimai工具进行存档的转换
+
     <p style="text-align: center;">
-        <a href="https://danieltoyama.github.io/MaiData2Aqua/lxns.html" target="_blank" style="text-decoration: none; color: #e21a56;">不使用麦当劳机器人？使用兼容落雪maimai数据库的转换工具！</a>
+        <a href="https://danieltoyama.github.io/MaiData2Aqua/lxns.html" target="_blank"
+            style="text-decoration: none; color: #e21a56;">不使用麦当劳机器人？使用兼容落雪maimai数据库的转换工具！</a>
     <p>
-    <a href="https://github.com/DanielToyama/MaiData2Aqua" target="_blank"
-        style="text-decoration: none; color: #007bff;">项目GitHub页面（点个star呗）</a>
+        <a href="https://github.com/DanielToyama/MaiData2Aqua" target="_blank"
+            style="text-decoration: none; color: #007bff;">项目GitHub页面（点个star呗）</a>
     <p>
-    <a href="https://DanielToyama.fun" target="_blank" style="text-decoration: none; color: #e377dc;">兔兔的个人主页</a>
-    
+        <a href="https://DanielToyama.fun" target="_blank" style="text-decoration: none; color: #e377dc;">兔兔的个人主页</a>
+
 
 </body>
 
