@@ -1,5 +1,5 @@
 # MaiData2Aqua
-用于将麦当劳机器人导出的gamedata转化为AquaNet可读的格式
+用于SBGB服务器导出gamedata并且转化为AquaNet可读的格式
 
 使用说明：
 1.下载此项目
@@ -9,6 +9,12 @@
 3.打开[maidatatrans.html](https://danieltoyama.github.io/MaiData2Aqua/maidatatrans.html),导入gamedata.json并且转换
 
 4.将导出的finalData导入到任意Aqua服务器
+
+以上工具只适用于转换完整文档。
+
+如果你因为某些原因无法使用麦当劳机器人，那么你可以使用下面的落雪maimai工具进行存档的转换 :
+
+[lxns.html](https://danieltoyama.github.io/MaiData2Aqua/lxns.html)
 
 注意：
 
