@@ -1,5 +1,5 @@
 # MaiData2Aqua
-用于SBGB服务器导出gamedata并且转化为AquaNet可读的格式
+用于SDGB服务器导出gamedata并且转化为AquaNet可读的格式
 
 使用说明：
 1.下载此项目
