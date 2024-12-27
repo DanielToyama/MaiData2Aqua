@@ -118,7 +118,7 @@
         转换为简要版本账号数据
 
         <!-- Tooltip 内容 -->
-        <span id="tooltip">简要版意味着没有完整的账号数据，只包含游玩记录。仅适用于做了自动化支持的AquaNet（这个导出格式和麦当劳bot导出的格式相同）</span>
+        <span id="tooltip">简要版意味着没有完整的账号数据，只包含游玩记录。<p>仅适用于做了自动化支持的AquaNet（这个导出格式和麦当劳bot导出的格式相同）</span>
     </button>
 
     <button id="convertFullBtn">
@@ -129,9 +129,22 @@
     </button>
 
     <a id="downloadBtn" class="button" style="display: none;" download="GameData.json">下载 JSON</a>
-
-    <p>
+  
     <div id="output"></div>
+    <p>注意：
+        <p>
+
+        上传完毕后此时Aqua服务器不会显示你上传的游戏成绩，<p>需要上机一把才能将数据读取出来。
+        <p>
+        
+        如果因为舞萌版本过旧无法使用我的存档的版本，<p>请你定位到“lastRomVersion”等字符自行修改版本
+        <p>
+        
+        Q：为什么Aqua服务器不将上传的成绩统计到游玩数据（Ap 数据 FC数据等等）
+        <p>
+        
+        A：因为此数据仅包含游玩历史和成绩总结，没有详细的游玩记录，服务器不会将其计入统计中
+    
     <p>
         <a href="https://github.com/DanielToyama/MaiData2Aqua" target="_blank"
             style="text-decoration: none; color: #007bff;">项目GitHub页面（点个star呗）</a>
