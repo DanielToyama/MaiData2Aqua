@@ -331,6 +331,7 @@
 
                 // 将转换后的数据合并到 emptyData 中
                 emptyData.userData.userName = playerData.nickname
+                emptyData.userData.playerRating = playerData.rating
                 emptyData.userMusicDetailList = transformedData.flatMap(entry => entry.userMusicDetailList);
 
                 // 将合并后的数据生成 JSON 文件
