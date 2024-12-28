@@ -188,10 +188,11 @@
         };
 
         const syncStatusMap = {
-            "fsdp": 5,
+            "fsdp": 4,
+            "fsp": 2,
             "fsd": 3,
-            "fs": 2,
-            "sync": 1
+            "fs": 1,
+            "sync": 5
         };
 
         const comboStatusMap = {
@@ -352,108 +353,6 @@
         };
 
 
-        function convertCsvToJson(csvData) {
-            csvData = csvData.split('\n').filter(line => line.trim() !== '').join('\n');
-            const rows = csvData.split('\n').map(row => row.split(','));
-            const headers = rows[0];
-            const results = {};
-
-            for (let i = 1; i < rows.length; i++) {
-                const row = rows[i];
-                const rowObj = {};
-
-                headers.forEach((header, index) => {
-                    rowObj[header] = row[index];
-                });
-
-                let { id, song_name, level_index, achievements, fc, fs, dx_score, dx_rating, rate, song_type, upload_time, play_time } = rowObj;
-
-                // 初始化 id 对应的结构
-                if (!results[id]) {
-                    results[id] = {
-                        userMusicDetailList: [],
-                        length: 0
-                    };
-                }
-
-                // 根据 song_type 是否是 dx 来决定 musicId 是否补充为5位
-                let musicId;
-                try {
-                    if (song_type.toLowerCase() === 'dx') {
-                        musicId = parseInt('1' + String(id).padStart(4, '0'));
-                    } else {
-                        musicId = parseInt(id);
-                    }
-                } catch (error) {
-                    alert(`错误：处理 song_type 或 id 时出现问题。详情: ${error.message}`);
-
-                    return;
-                }
-
-                const level = Number(level_index);
-                const achievement = Number(achievements.replace(/\./g, '')) || 0;
-
-                const syncStatus = syncStatusMap[fs] || 0;
-                const comboStatus = comboStatusMap[fc] || 0;
-                const deluxscoreMax = Number(dx_score) || 0;
-                if ((!level && level !== 0) || (level > 4 || level < 1)) {
-                    console.log(`错误：数据${level} 的 level 字段缺失或无效。`);
-                    continue; // Skip this entry if required fields are missing
-                }
-
-                // 添加默认值来防止 rate 为 undefined
-                let scoreRank = 0;
-                try {
-                    if (rate) {
-                        scoreRank = scoreRankMap[rate.toLowerCase()] || 0;
-                    } else {
-                        alert(`错误：rate 字段缺失或无效。`);
-                        return;
-                    }
-                } catch (error) {
-                    alert(`错误：处理 rate 时出现问题。详情: ${error.message}`);
-                    return;
-                }
-
-                let existing = results[id].userMusicDetailList.find(item => item.level === Number(level));
-
-                if (existing) {
-                    existing.playCount += 1;
-                    if (Number(achievement) > existing.achievement) {
-                        existing.achievement = achievement;
-                    }
-                } else {
-                    if ((!level && level !== 0) || (level > 4 || level < 1)) {
-                        console.log(`错误：数据${level} 的 level 字段缺失或无效。`);
-                        continue; // Skip this entry if required fields are missing
-                    }
-
-
-                    results[id].userMusicDetailList.push({
-                        musicId: musicId || 50000,
-                        level: Number(level),
-                        playCount: 1,
-                        achievement: Number(achievement) || 0,
-                        comboStatus: comboStatus || 0,
-                        syncStatus: syncStatus || 0,
-                        deluxscoreMax: deluxscoreMax || 0,
-                        scoreRank: scoreRank || 0,
-                        extNum1: 0,
-                        extNum2: 0
-                    });
-                }
-            }
-
-            const finalResult = [];
-            for (const id in results) {
-                results[id].length = results[id].userMusicDetailList.length;
-                finalResult.push(results[id]);
-            }
-
-
-            return { success: true, finalResult };
-
-        }
 
 
     </script>
