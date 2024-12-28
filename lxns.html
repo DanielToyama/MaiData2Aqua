@@ -306,7 +306,7 @@
                 }
 
                 const level = Number(level_index);
-                const achievement = Number(achievements.replace(/\./g, '')) || 0;
+                const achievement = Math.round(achievements * 10000)
 
                 const syncStatus = syncStatusMap[fs] || 0;
                 const comboStatus = comboStatusMap[fc] || 0;
@@ -348,7 +348,7 @@
                         musicId: musicId || 50000,
                         level: Number(level) ,
                         playCount: 1,
-                        achievement: Number(achievement) || 0,
+                        achievement: Math.round(achievements * 10000) || 0,
                         comboStatus: comboStatus || 0,
                         syncStatus: syncStatus || 0,
                         deluxscoreMax: deluxscoreMax || 0,
