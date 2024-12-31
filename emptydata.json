@@ -1,7 +1,7 @@
 {
     "userData": {
         "accessCode": "0",
-        "userName": "ＭａｉＭａｉ！！",
+        "userName": "\\Ｋａｓｕｍｉ/",
         "friendCode": "",
         "isNetMember": 1,
         "nameplateId": 0,
@@ -11,7 +11,7 @@
         "titleId": 1,
         "partnerId": 1,
         "frameId": 1,
-        "selectMapId": 100007,
+        "selectMapId": 200001,
         "totalAwake": 0,
         "gradeRating": 0,
         "musicRating": 0,
@@ -22,10 +22,10 @@
         "courseRank": 0,
         "charaSlot": [
             101,
-            605,
-            604,
-            603,
-            602
+            102,
+            105,
+            104,
+            103
         ],
         "charaLockSlot": [
             0,
@@ -34,14 +34,14 @@
             0,
             0
         ],
-        "contentBit": 67110944,
+        "contentBit": 2080,
         "playCount": 1,
-        "eventWatchedDate": "2024-12-22 03:45:58.0",
+        "eventWatchedDate": "2024-12-31 12:11:46.0",
         "lastGameId": "SDEZ",
         "lastRomVersion": "1.35.00",
         "lastDataVersion": "1.35.06",
-        "lastLoginDate": "2024-12-22 03:45:58.0",
-        "lastPlayDate": "2024-12-22 03:50:05.0",
+        "lastLoginDate": "2024-12-31 12:11:46.0",
+        "lastPlayDate": "2024-12-31 12:14:07.0",
         "lastPlayCredit": 1,
         "lastPlayMode": 0,
         "lastPlaceId": 291,
@@ -57,7 +57,7 @@
         "firstGameId": "SDEZ",
         "firstRomVersion": "1.35.00",
         "firstDataVersion": "1.35.06",
-        "firstPlayDate": "2024-12-22 03:45:58.0",
+        "firstPlayDate": "2024-12-31 12:11:46.0",
         "compatibleCmVersion": "0.00.00",
         "dailyBonusDate": "1970-01-01 09:00:00.0",
         "dailyCourseBonusDate": "1970-01-01 09:00:00.0",
@@ -95,7 +95,7 @@
         "playerOldRating": 0,
         "playerNewRating": 0,
         "banState": 0,
-        "dateTime": 1734810326,
+        "dateTime": 1735618260,
         "cmLastEmoneyBrand": 2,
         "cmLastEmoneyCredit": 69,
         "mapStock": 0,
@@ -103,11 +103,11 @@
         "renameCredit": 0
     },
     "userExtend": {
-        "selectMusicId": 11010,
+        "selectMusicId": 0,
         "selectDifficultyId": 0,
-        "categoryIndex": 106,
+        "categoryIndex": 1,
         "musicIndex": 0,
-        "extraFlag": 513,
+        "extraFlag": 0,
         "selectScoreType": 1,
         "extendContentBit": 13,
         "isPhotoAgree": false,
@@ -121,15 +121,15 @@
         "selectResultScoreViewType": 0
     },
     "userOption": {
-        "optionKind": 3,
-        "noteSpeed": 26,
+        "optionKind": 0,
+        "noteSpeed": 14,
         "slideSpeed": 10,
-        "touchSpeed": 20,
+        "touchSpeed": 14,
         "tapDesign": 0,
         "holdDesign": 0,
         "slideDesign": 0,
         "starType": 0,
-        "outlineDesign": 3,
+        "outlineDesign": 15,
         "noteSize": 1,
         "slideSize": 1,
         "touchSize": 1,
@@ -143,8 +143,8 @@
         "submonitorAchive": 0,
         "submonitorAppeal": 0,
         "matching": 1,
-        "trackSkip": 1,
-        "brightness": 0,
+        "trackSkip": 0,
+        "brightness": 2,
         "mirrorMode": 0,
         "dispJudge": 0,
         "dispJudgePos": 5,
@@ -193,7 +193,7 @@
         {
             "kind": 1,
             "id": 10,
-            "sortNumber": 1734806826,
+            "sortNumber": 1735614730,
             "param1": 0,
             "param2": 0,
             "param3": 0,
@@ -202,17 +202,8 @@
         {
             "kind": 1,
             "id": 90,
-            "sortNumber": 1734806845,
+            "sortNumber": 1735614758,
             "param1": 450005,
-            "param2": 0,
-            "param3": 0,
-            "param4": 0
-        },
-        {
-            "kind": 2,
-            "id": 11010,
-            "sortNumber": 1734806985,
-            "param1": 0,
             "param2": 0,
             "param3": 0,
             "param4": 0
@@ -603,6 +594,17 @@
             "favorite": false,
             "awakening": 0,
             "useCount": 0
+        },
+        {
+            "characterId": 200101,
+            "point": 0,
+            "count": 0,
+            "level": 1,
+            "nextAwake": 0,
+            "nextAwakePercent": 0,
+            "favorite": false,
+            "awakening": 0,
+            "useCount": 0
         }
     ],
     "userChargeList": [],
@@ -638,7 +640,7 @@
     "userGeneralDataList": [
         {
             "propertyKey": "recent_rating",
-            "propertyValue": "11010:0:20002:0"
+            "propertyValue": ""
         },
         {
             "propertyKey": "recent_rating_new",
@@ -699,1188 +701,8 @@
     ],
     "userLoginBonusList": [],
     "userMapList": [
-        {
-            "mapId": 1,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 2,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 3,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 4,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 5,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 6,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 7,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 31,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 32,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 33,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 34,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 35,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 36,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 38,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 39,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 40,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 41,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 42,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 50001,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 50002,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 50003,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 50004,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 50005,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 50006,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 50007,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 50008,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 50009,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 50031,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 50032,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 50033,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 50034,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 50036,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 50037,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 50038,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 50039,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 100001,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 100003,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 100004,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 100005,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 100006,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 100007,
-            "distance": 13000,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 100051,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 100052,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 100053,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 100054,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 100055,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 100056,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 100057,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 100058,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 100059,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 100060,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 100061,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 100062,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 150001,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 150002,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 150003,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 150004,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 150005,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 150006,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 150051,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 150052,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 150053,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 150054,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 150055,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 150056,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 150057,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 150059,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 150060,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 200001,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 200002,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 200003,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 200004,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 200005,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 200006,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 200051,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 200052,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 200053,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 200054,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 200055,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 200056,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 200057,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 200058,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 200059,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 200060,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 200061,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 200062,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 200063,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 250001,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 250002,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 250003,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 250004,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 250005,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 250006,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 250007,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 250051,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 250052,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 250053,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 250054,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 250055,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 250056,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 250057,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 250058,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 250059,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 250060,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 300001,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 300002,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 300003,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 300004,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 300005,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 300006,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 300051,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 300052,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 300053,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 300054,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 300055,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 300056,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 300057,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 300058,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 300059,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 300060,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 300061,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 350001,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 350003,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 350004,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 350005,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 350006,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 350007,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 350051,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 350052,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 350053,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 350054,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 350055,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 350056,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 350057,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 350058,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 400001,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 400002,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 400003,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 400004,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 400005,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 400006,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 400051,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 400052,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 400053,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 400054,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 400055,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 400056,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 400057,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 400058,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 400059,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 400061,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 400062,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 400063,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 450001,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 450002,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 450003,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 450004,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 450005,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 450051,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 450052,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 450053,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 450054,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 450056,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 450057,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 450058,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 450059,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 450060,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        },
-        {
-            "mapId": 450061,
-            "distance": 0,
-            "isLock": false,
-            "isClear": false,
-            "isComplete": false
-        }
     ],
-    "userMusicDetailList": [
-       
-    ],
-    "userPlaylogList": [
-       
-    ],
+    "userMusicDetailList": [],
+    "userPlaylogList": [],
     "gameId": "SDEZ"
 }
