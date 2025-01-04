@@ -225,11 +225,11 @@
                     // 此处可以根据需求继续处理数据或写入文件等
                 } else {
                     console.log('Failed to get player records, status code:', response.status);
-                    alertDiv.innerHTML = "<strong>错误：</strong>服务器似乎开小差了或者你的token不正确...";
+                    alertDiv.innerHTML = "<strong>错误：</strong>服务器连接错误，可能需要VPN或者你的token不正确...";
                     outputDiv.textContent = "转换失败！";
                 }
             } catch (error) {
-                alertDiv.innerHTML = "<strong>错误：</strong>服务器似乎开小差了或者你的token不正确...";
+                alertDiv.innerHTML = "<strong>错误：</strong>服务器连接错误，可能需要VPN或者你的token不正确...";
                 outputDiv.textContent = "转换失败！";
             }
         }
@@ -319,7 +319,7 @@
                 const response = await fetch(`https://dfproxy.danieltoyama.fun?token=${token}`);
 
                 if (!response.ok) {
-                    alertDiv.innerHTML = "<strong>错误，请检查你的 token 或网络连接！</strong>";
+                    alertDiv.innerHTML = "<strong>错误，请检查你的 token 或可能需要VPN才能正确连接后端！</strong>";
                     outputDiv.textContent = "转换失败！";
                 }
 
