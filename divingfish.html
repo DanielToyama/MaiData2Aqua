@@ -351,7 +351,7 @@
                 outputDiv.textContent = "转换完成！";
 
             } catch (error) {
-                alertDiv.innerHTML = `<strong>错误：</strong>${error.message}\n请检查你的 token 或网络连接。`;
+                alertDiv.innerHTML = `<strong>错误：</strong>${error.message}\n请检查你的 token 或网络连接(部分区域可能需要vpn或者手机流量才能正常运行获取数据)。`;
                 outputDiv.textContent = "转换失败！";
                 console.error('读取文件异常:', error);
             }
