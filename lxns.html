@@ -27,6 +27,35 @@
             margin-bottom: 20px;
         }
 
+        .finish-alert {
+            background-color: #a9ecb2;
+            color: #333;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .highlighter {
+            background-color: rgba(255, 200, 0, 0.5);
+            /* 黄色半透明 */
+            padding: 0 2px;
+            /* 让背景稍微延伸 */
+        }
+        .highlighter-red {
+            background-color: rgba(243, 98, 66, 0.5);
+            /* 黄色半透明 */
+            padding: 0 2px;
+            /* 让背景稍微延伸 */
+        }
+
+        .error-alert {
+            background-color: #f5a0a0;
+            color: #333;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
         .alert strong {
             font-weight: bold;
         }
@@ -132,19 +161,28 @@
   
     <div id="output"></div>
     <p>注意：
-        <p>
+    <p>
+        上传前请先确保你的水鱼个人设置已经关闭了成绩掩码，否则掩码将导致部分数据缺失导致的存档不正确
 
-        上传完毕后此时Aqua服务器不会显示你上传的游戏成绩，<p>需要上机一把才能将数据读取出来。
-        <p>
-        
-        如果因为舞萌版本过旧无法使用我的存档的版本，<p>请你定位到“lastRomVersion”等字符自行修改版本
-        <p>
-        
+    <p>
+
+        上传完毕后此时Aqua服务器<span class="highlighter">不会立刻</span>显示你上传的游戏成绩，
+    <p>需要<span class="highlighter">上机一把</span>才能将数据读取出来。
+    <p>
+
+        如果因为舞萌版本过旧无法使用我的存档的版本，
+    <p>请你定位到“lastRomVersion”等字符自行修改版本
+    <p>
+
         Q：为什么Aqua服务器不将上传的成绩统计到游玩数据（Ap 数据 FC数据等等）
-        <p>
-        
+    <p>
+
         A：因为此数据仅包含游玩历史和成绩总结，没有详细的游玩记录，服务器不会将其计入统计中
-    
+    <p>
+        Q: 简要数据和完整数据的区别是什么？
+    <p>
+        A：简要版意味着没有完整的账号数据，只包含游玩记录。 <p>仅适用于做了自动化支持的AquaNet/MuNet。服务器会自动获取两个成绩中的高分导入存档中（这个导出格式和麦当劳bot导出的格式相同）<p>完整版会直接给你使用<span class="highlighter-red">全新</span>的账号数据（适用于直接导入到Net完整覆盖存档），你之前的存档会<span class="highlighter-red">永久消失</span>（真的很久！）
+
     <p>
         <a href="https://github.com/DanielToyama/MaiData2Aqua" target="_blank"
             style="text-decoration: none; color: #007bff;">项目GitHub页面（点个star呗）</a>
