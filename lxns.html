@@ -41,6 +41,7 @@
             padding: 0 2px;
             /* 让背景稍微延伸 */
         }
+
         .highlighter-red {
             background-color: rgba(243, 98, 66, 0.5);
             /* 黄色半透明 */
@@ -127,17 +128,41 @@
             margin-left: 10px;
             cursor: pointer;
         }
+
+        /* Munet推广样式 */
+        .munet-promo {
+            background-color: #e6f7ff;
+            border-left: 4px solid #1890ff;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .munet-logo {
+            max-width: 200px;
+            margin: 10px 0;
+            display: block;
+        }
     </style>
 </head>
 
 <body>
 
-    <h1> <a href="https://maimai.lxns.net/" target="_blank"
-        style="text-decoration: none; color: #e822e84c;">落雪咖啡屋</a> maimai DX 查分器数据转换为AquaNet - Beta 版本</h1>
-
+    <h1> <a href="https://maimai.lxns.net/" target="_blank" style="text-decoration: none; color: #e822e84c;">落雪咖啡屋</a>
+        maimai DX 查分器数据转换为AquaNet - Beta 版本</h1>
+    <div class="munet-promo">
+        <h3>更简单的数据转换方式！</h3>
+        现在您可以直接在我们的全新Sega音游私服<a href="https://mumur.net" target="_blank"
+            style="text-decoration: none; color: #1890ff;">Munet服务器</a>上完成数据转换，无需使用其他工具！</p>
+        <a href="https://mumur.net" target="_blank">
+            <img src="https://mumur.net/x_angelkawaii_x/x_BnUlkeFwrw5_x.avif" alt="Munet Logo" class="munet-logo">
+        </a>
+        点击上方图片访问<a href="https://mumur.net" target="_blank"
+            style="text-decoration: none; color: #1890ff;">Munet官网</a>，也许是更适合国内玩家的Maimai服务器！</p>
+    </div>
     <div class="alert">
-        <strong>注意：</strong>这是一个 Beta 版本的页面，转换过程中请一定一定确保备份当前存档。遇到问题请及时反馈。<a href="https://DanielToyama.fun" target="_blank"
-            style="text-decoration: none; color: #6f00004c;">联系户山兔兔</a>
+        <strong>注意：</strong>这是一个 Beta 版本的页面，转换过程中请一定一定确保备份当前存档。遇到问题请及时反馈。<a href="https://DanielToyama.fun"
+            target="_blank" style="text-decoration: none; color: #6f00004c;">联系户山兔兔</a>
 
     </div>
 
@@ -158,7 +183,7 @@
     </button>
 
     <a id="downloadBtn" class="button" style="display: none;" download="GameData.json">下载 JSON</a>
-  
+
     <div id="output"></div>
     <p>注意：
     <p>
@@ -181,7 +206,10 @@
     <p>
         Q: 简要数据和完整数据的区别是什么？
     <p>
-        A：简要版意味着没有完整的账号数据，只包含游玩记录。 <p>仅适用于做了自动化支持的AquaNet/MuNet。服务器会自动获取两个成绩中的高分导入存档中（这个导出格式和麦当劳bot导出的格式相同）<p>完整版会直接给你使用<span class="highlighter-red">全新</span>的账号数据（适用于直接导入到Net完整覆盖存档），你之前的存档会<span class="highlighter-red">永久消失</span>（真的很久！）
+        A：简要版意味着没有完整的账号数据，只包含游玩记录。
+    <p>仅适用于做了自动化支持的AquaNet/MuNet。服务器会自动获取两个成绩中的高分导入存档中（这个导出格式和麦当劳bot导出的格式相同）
+    <p>完整版会直接给你使用<span class="highlighter-red">全新</span>的账号数据（适用于直接导入到Net完整覆盖存档），你之前的存档会<span
+            class="highlighter-red">永久消失</span>（真的很久！）
 
     <p>
         <a href="https://github.com/DanielToyama/MaiData2Aqua" target="_blank"
@@ -350,10 +378,10 @@
                 const comboStatus = comboStatusMap[fc] || 0;
                 const deluxscoreMax = Number(dx_score) || 0;
                 if ((!level && level !== 0) || (level > 4 || level < 1)) {
-                        console.log(`错误：数据${level} 的 level 字段缺失或无效。`);
-                        continue; // Skip this entry if required fields are missing
-                    }
-          
+                    console.log(`错误：数据${level} 的 level 字段缺失或无效。`);
+                    continue; // Skip this entry if required fields are missing
+                }
+
                 // 添加默认值来防止 rate 为 undefined
                 let scoreRank = 0;
                 try {
@@ -376,15 +404,15 @@
                         existing.achievement = achievement;
                     }
                 } else {
-                    if ((!level && level !== 0)  || (level > 4 || level < 1)) {
+                    if ((!level && level !== 0) || (level > 4 || level < 1)) {
                         console.log(`错误：数据${level} 的 level 字段缺失或无效。`);
                         continue; // Skip this entry if required fields are missing
                     }
-          
+
 
                     results[id].userMusicDetailList.push({
                         musicId: musicId || 50000,
-                        level: Number(level) ,
+                        level: Number(level),
                         playCount: 1,
                         achievement: Math.round(achievements * 10000) || 0,
                         comboStatus: comboStatus || 0,
