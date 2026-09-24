@@ -1,14 +1,16 @@
 # MaiData2Aqua
 用于把从SDGB服务器导出的gamedata转化为AquaNet可读的格式
 
-使用方法（四选一）：
+使用方法（五选一）：
 1.在tg某麦当劳机器人使用/getplaydata json下载gamedata.json打开[maidatatrans.html](https://danieltoyama.github.io/MaiData2Aqua/maidatatrans.html),导入gamedata.json并且转换
 
 2.使用[lxns.html](https://danieltoyama.github.io/MaiData2Aqua/lxns.html)从落雪maimai工具转换
 
 3.使用[divingfish.html](https://danieltoyama.github.io/MaiData2Aqua/divingfish.html)从水鱼maimai工具转换
 
-4.本地启动Nodejs环境使用[index.js](https://danieltoyama.github.io/MaiData2Aqua/index.js)转换麦当劳机器人获取的数据（非常不推荐）
+4.使用[dxrating.html](https://danieltoyama.github.io/MaiData2Aqua/dxrating.html)从dxrating工具转换
+
+5.本地启动Nodejs环境使用[index.js](https://danieltoyama.github.io/MaiData2Aqua/index.js)转换麦当劳机器人获取的数据（非常不推荐）
 
 
 
