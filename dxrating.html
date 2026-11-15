@@ -458,19 +458,26 @@
                     return
                 }
 
-                let sheetId = typeof entry.sheetId === 'string' ? entry.sheetId : null
-                if (!sheetId && entry.identity && entry.identity.songId) {
-                    sheetId = [entry.identity.songId, entry.identity.type, entry.identity.difficulty].join(SHEET_ID_SEPARATOR)
+                // 旧版导出 sheetId 形如「曲名__dxrt__dx__dxrt__master」；
+                // 新版（2026-11 起）改为不透明 ID（dsht_xxx / dsng_xxx），需回退到 providerSongName + type + difficulty
+                const identity = entry.identity || {}
+                const providerSongName = entry.source && entry.source.providerSongName
+                const candidates = []
+                if (typeof entry.sheetId === 'string') candidates.push(entry.sheetId)
+                if (identity.songId) candidates.push([identity.songId, identity.type, identity.difficulty].join(SHEET_ID_SEPARATOR))
+                if (providerSongName && identity.type && identity.difficulty) {
+                    candidates.push([providerSongName, identity.type, identity.difficulty].join(SHEET_ID_SEPARATOR))
                 }
 
-                if (!sheetId) {
+                if (candidates.length === 0) {
                     warnings.push(`第 ${index + 1} 条缺少 sheetId，已跳过`)
                     return
                 }
 
+                const sheetId = candidates.find((id) => table.has(id)) || candidates[candidates.length - 1]
                 const sheet = table.get(sheetId)
                 if (!sheet) {
-                    if (sheetId.includes(`${SHEET_ID_SEPARATOR}utage`)) {
+                    if (identity.type === 'utage' || candidates.some((id) => id.includes(`${SHEET_ID_SEPARATOR}utage`))) {
                         if (opts.skipUtage === false) warnings.push(`宴会场谱面暂不支持: ${sheetId}`)
                         stats.skippedUtage++
                     } else {
