@@ -1,0 +1,52 @@
+name: Update dxdata
+
+on:
+  schedule:
+    # 上游 gekichumai/dxrating 每天约 07:00 UTC 更新 dxdata，稍后再跑
+    - cron: '37 7 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-dxdata
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Regenerate dxdata index
+        run: node scripts/update-dxdata.mjs
+
+      - name: Validate generated file
+        run: |
+          node -e "
+            require('./data/dxdata-index.js');
+            const data = globalThis.DXDATA_INDEX;
+            if (!data || !Array.isArray(data.songs) || data.songs.length === 0) {
+              throw new Error('data/dxdata-index.js 内容无效');
+            }
+            console.log('songs:', data.songs.length, 'generatedAt:', data.generatedAt, 'appVersion:', data.appVersion);
+          "
+
+      - name: Commit and push
+        run: |
+          if git diff --quiet -- data/dxdata-index.js; then
+            echo "dxdata-index.js 无变化，跳过提交"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/dxdata-index.js
+          git commit -m "chore(dxdata): update song data ($(date -u +%Y-%m-%d))"
+          git push
